@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ngApp">
+
+<!-- Mirrored from www.binate-solutions.com/career by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Apr 2017 17:42:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TM96GM');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Binate Career">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binate-solutions.com : Career</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#15ad08">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/angular-carousel/1.0.1/angular-carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/angular-material-icons.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/line-icons.css" />
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM96GM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript)-->
+    <div class="wrapper" ng-controller="mainCtrl">
+        <header-section></header-section>
+
+        <!--Body container start-->
+        <div class="body-container" ng-controller="careerController">
+
+
+            <section id="pageTitle">
+                <article class="transperent-bg">
+                    <div class="container page-title-inner">
+                        <div class="col-md-12 center-align">
+                            <h3 class="heading-03 margin-bottom-40">Choose your Position from below</h3>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="hierUs" class="padding-50-0">
+                <article>
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="job-item margin-bottom-30" ng-repeat="job in jobCirculars">
+                                <h6 class="heading-06 primary-color"><a ng-href="{{ job.link }}" data-ng-bind="job.name"></a></h6>
+                                <p class="margin-bottom-0" data-ng-bind="job.description+'...'"></p>
+                                <div class="job-item-bottom">
+                                    <p class="pull-left margin-bottom-0"><strong class="primary-color">Experience :</strong> <span data-ng-bind="job.experience"><span></p>
+                                    <p class="pull-right margin-bottom-0"><strong class="primary-color">Deadline :</strong> <span data-ng-bind="job.deadline"><span></p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+        <!--Body container end-->
+
+        <footer-section></footer-section>
+    </div>
+
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.js"></script>
+    <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
+    <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/angular-carousel/1.0.1/angular-carousel.min.js"></script>
+    <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+    <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.6.4/js/ngDialog.min.js"></script>
+    <script type="text/javascript" src="../cdn.ravenjs.com/3.7.0/raven.min.js"></script>
+    <script type="text/javascript" src="js/angular-parallax.js"></script>
+    <script type="text/javascript" src="js/angular-scroll-animate.js"></script>
+
+    <script type="text/javascript" src="js/configs.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/main-controller.js"></script>
+    <script type="text/javascript" src="js/home-controller.js"></script>
+    <script type="text/javascript" src="js/career-controller.js"></script>
+    <script type="text/javascript" src="js/match-media.js"></script>
+    <script type="text/javascript" src="js/customSelect.js"></script>
+    <script type="text/javascript" src="js/file-uploader-directive.js"></script>
+    <script type="text/javascript" src="js/job-application.service.js"></script>
+    <script type="text/javascript" src="js/requirement-creation.service.js"></script>
+    <script type="text/javascript" src="app/layout/main/js/body-scripts.directive.js"></script>
+    <script type="text/javascript" src="app/layout/main/js/footer-section.directive.js"></script>
+    <script type="text/javascript" src="app/layout/main/js/header-section.directive.js"></script>
+
+</body>
+
+
+<!-- Mirrored from www.binate-solutions.com/career by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Apr 2017 17:42:41 GMT -->
+</html>
